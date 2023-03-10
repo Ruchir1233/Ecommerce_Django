@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>A basic HTML table</h2>
+
+<table style="width:100%">
+
+
+  <tr>
+    <th>product name</th>
+    <th>product price</th>
+    <th>product description</th>
+  </tr>
+
+  <tr>
+    {% for produc in product %}
+    <td>{{ produc.p_name }}</td>
+    <td>{{ produc.description }}</td>
+    <td>{{ produc.price }}</td>
+  </tr>
+  {% endfor %}
+
+  
+</table>
+
+
+</body>
+</html>
+
